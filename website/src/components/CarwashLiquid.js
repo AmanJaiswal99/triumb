@@ -5,6 +5,7 @@ import chem from '../images/chem.jpg'
 function CarwashLiquid() {
     return (
         <div className='carwash'>
+            <span id="Bg">Triumb</span>
           <h1 className="carwash-heading">
               Special Carwash Liquid
           </h1>
@@ -14,7 +15,7 @@ function CarwashLiquid() {
                   Triumb cares for the
             environment and uses least
             amount of water. We have
-            developed a special chemical
+            used a special chemical
             composition for a car cleaner to
             give your car the best shine
                   </p>

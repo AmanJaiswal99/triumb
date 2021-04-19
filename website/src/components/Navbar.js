@@ -75,23 +75,23 @@ function Navbar() {
         </div>
         <ul className="nav-links" onClick={clicked}>
             <li><a  className={show && "a-white"} href="#productid">PRODUCTS</a></li>
-            <li><a  className={show && "a-white"} href="#storyid">OUR STORY</a></li>
+            <li><a  className={show && "a-white"} href="#storyid">ABOUT US</a></li>
             <li><a  className={show && "a-white"}href="#contactid">CONTACT US</a></li>
             <li><div className="a-white login-link" >
              <Link to={!user && "/login"}>
              <div onClick={handleAuthentication}className='header_option'>
-                <span className='line_one'>{user?user.email:'Guest'}</span>
-                <span className='line_two'>{user?'Logout':'Sign in'}</span>
+                <span className='line_one'>{user?user.email:<span/>}</span>
+                <span className='line_two'>{user?'Logout':'Your Triumb'}</span>
                 </div>
                </Link> 
             </div></li>
             
-            <Link to='/cart'>
+            {/* <Link to='/cart'>
           <li className='cart-logo'>
               <ShoppingCartIcon/>
               {cart.length}
           </li>
-           </Link>
+           </Link> */}
         </ul>
     </div>
     )
